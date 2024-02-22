@@ -41,6 +41,6 @@ The extension should now be installed in your Chrome browser.
 To use the Full Page Capture extension, simply click on its icon in the Chrome toolbar while you are on the page you wish to capture. The extension will start capturing the visible part of the page and then automatically scroll and capture the rest of the page. Once the capture process is complete, you will see the screenshots logged in the console.
 
 ## Proprietary
- This code is temporarily made public only for the submission and access by the MIT SLOAN PM Hackathon team.
+ This code is temporarily made public only for submission to and access by the MIT SLOAN PM Hackathon team.
 
 
