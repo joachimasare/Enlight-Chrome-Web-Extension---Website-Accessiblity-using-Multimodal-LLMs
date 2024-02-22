@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Full Page Capture",
+    "name": "Enlight",
     "version": "1.0",
     "permissions": ["activeTab", "tabs", "storage","scripting"],
     "background": {

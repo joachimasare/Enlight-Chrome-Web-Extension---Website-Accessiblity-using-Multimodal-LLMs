@@ -6,25 +6,25 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
 function capturePage() {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-        let activeTab = tabs[0];
-        chrome.tabs.sendMessage(activeTab.id, { action: "getViewportHeight" }, (response) => {
-            if (chrome.runtime.lastError || !response) {
-                console.error("Error getting viewport height:", chrome.runtime.lastError);
+      let activeTab = tabs[0];
+      chrome.tabs.sendMessage(activeTab.id, { action: "getViewportHeight" }, (response) => {
+        if (chrome.runtime.lastError || !response) {
+          console.error("Error getting viewport height:", JSON.stringify(chrome.runtime.lastError, null, 2));
+          return;
+        }
+        const viewportHeight = response.viewportHeight;
+        chrome.scripting.executeScript({
+            target: { tabId: activeTab.id },
+            func: () => document.body.scrollHeight,
+        }, (results) => {
+            if (chrome.runtime.lastError || !results) {
+                console.error("Error executing script:", chrome.runtime.lastError);
                 return;
             }
-            const viewportHeight = response.viewportHeight;
-            chrome.scripting.executeScript({
-                target: { tabId: activeTab.id },
-                func: () => document.body.scrollHeight,
-            }, (results) => {
-                if (chrome.runtime.lastError || !results) {
-                    console.error("Error executing script:", chrome.runtime.lastError);
-                    return;
-                }
-                let maxScrollHeight = results[0].result;
-                scrollAndCapture(activeTab, 0, maxScrollHeight, viewportHeight);
-            });
+            let maxScrollHeight = results[0].result;
+            scrollAndCapture(activeTab, 0, maxScrollHeight, viewportHeight);
         });
+    });
     });
 }
 
