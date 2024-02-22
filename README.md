@@ -2,7 +2,9 @@
 
 # Full Page Capture Chrome Extension
 
-This Chrome extension allows users to capture full-page screenshots of web pages they visit. It automatically scrolls through the page, takes snapshots, and saves them.
+This Chrome extension is an AI-powered accessiblity tool allows blind and visually impaired business owners to access insights from online business web applications such as google analytics for their e-commerce websites. Once started, it automatically scrolls through the page, takes snapshots, and caches them and sends them as input to a multimodal LLM to extract the text and images to provide contextual understanding of the active webpage.
+
+v1 is an MVP of this that allows the user to install the extension in Google Chrome, and once started by selecting the extension, it automatically accesses the content of the active tab, and scans by automatically scrolling the page to take snapshots of the webpage and caches the images to be processed by the llm. 
 
 ## Installation
 
