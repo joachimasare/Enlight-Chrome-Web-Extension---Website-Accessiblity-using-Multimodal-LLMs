@@ -30,15 +30,18 @@ To install this extension, follow these steps:
 
 3. **Enable Developer Mode**:  
    - Enable "Developer mode" by ticking the checkbox in the upper-right corner.
+   - 
 ![Screenshot 2024-02-22 134223](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/c358ff95-54f6-41d4-a34e-90e6f840b1de)
 
 4. **Load the Extension**:  
    - Click on the "Load unpacked" button.
    - Navigate to the directory where you cloned or unzipped the extension.
    - Select the directory and click "Open".
+   - 
 ![Screenshot 2024-02-22 134238](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/f2386216-100f-435e-bfc8-59d512bd9d23)
 
 The extension should now be installed in your Chrome browser.
+
 ![Screenshot 2024-02-22 134251](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/f2b2f73e-ae46-41f2-87d2-01b53f0c68ce)
 
 ## Usage
@@ -79,7 +82,7 @@ To use the Full Page Capture extension, simply click on its icon in the Chrome t
 
      ![Screenshot 2024-02-23 043412](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/e6a74d9e-f884-4f51-b7cf-8924648dd9e0)
 
-      ![Screenshot 2024-02-23 043422](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/0f3ae18e-ce2e-4767-a140-0d16a303b5b2)
+     ![Screenshot 2024-02-23 043422](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/0f3ae18e-ce2e-4767-a140-0d16a303b5b2)
 
 
 These steps confirm that the extension operates correctly by taking and caching the screenshots. These images are not saved as files but are held in memory for user data privacy & security and to save local storage space.
