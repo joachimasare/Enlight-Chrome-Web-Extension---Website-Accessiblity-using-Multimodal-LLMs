@@ -82,7 +82,7 @@ To use the Full Page Capture extension, simply click on its icon in the Chrome t
       ![Screenshot 2024-02-23 043422](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/0f3ae18e-ce2e-4767-a140-0d16a303b5b2)
 
 
-These steps will confirm that the extension is operating correctly by taking and caching the screenshots. These images are not saved as files but are held in memory to for user data privacy & security and to save storage. I
+These steps confirm that the extension operates correctly by taking and caching the screenshots. These images are not saved as files but are held in memory for user data privacy & security and to save local storage space.
 
 ## User Privacy, Security, and Consent
 **Consent for Content Capture:** At the initial setup, users are explicitly asked for their consent to capture and analyze the content of the web pages they visit. 
