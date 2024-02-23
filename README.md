@@ -57,9 +57,11 @@ To use the Full Page Capture extension, simply click on its icon in the Chrome t
 2. **Access the Extension's 'service worker' to view the image logs taken**:
    - Navigate to `chrome://extensions/` in your Chrome browser.
    - Locate the Full Page Capture extension in the list.
-     ![Screenshot 2024-02-23 043341](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/44ec76f0-a1aa-4d32-998e-76b03f7254fa)
    - Click on the `background activity/logs` link for the Enlight extension, which might be labeled as `service worker` or similar. This will open the Developer Tools for the background service worker of the 
      extension.
+  
+     ![Screenshot 2024-02-23 043341](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/44ec76f0-a1aa-4d32-998e-76b03f7254fa)
+
      ![Screenshot 2024-02-23 043359](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/fed1f86c-64ff-4ffb-a70d-23cdee6969f2)
 
 3. **View Captured Images**:
