@@ -62,19 +62,24 @@ To use the Full Page Capture extension, simply click on its icon in the Chrome t
   
      ![Screenshot 2024-02-23 043341](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/44ec76f0-a1aa-4d32-998e-76b03f7254fa)
 
-     ![Screenshot 2024-02-23 043359](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/fed1f86c-64ff-4ffb-a70d-23cdee6969f2)
-
 3. **View Captured Images**:
    - In the Developer Tools window, click on the "Console" tab.
    - You should see logs for each screenshot taken, formatted as Data URLs beginning with `data:image/png;base64,` followed by the image data in base64 encoding.
-     ![Screenshot 2024-02-23 043412](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/e6a74d9e-f884-4f51-b7cf-8924648dd9e0)
+  
+     ![Screenshot 2024-02-23 043359](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/fed1f86c-64ff-4ffb-a70d-23cdee6969f2)
+
    - The number of logs will correspond to the number of screenshots taken as the extension scrolled through the page.
 
 4. **Check for Completion**:
    - Once the extension has finished scrolling through the entire page and capturing screenshots, you should see a final log entry indicating that the process is complete, such as "Capture complete."
+     
      ![Screenshot 2024-02-23 044922](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/6af258c6-260f-4fa7-ba83-57a148cddaed)
-   - Copy and paste any of the image urls into the address bar to view the captured image. 
-   ![Screenshot 2024-02-23 043422](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/0f3ae18e-ce2e-4767-a140-0d16a303b5b2)
+     
+   - Copy and paste any of the image urls into the address bar to view the captured image.
+
+     ![Screenshot 2024-02-23 043412](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/e6a74d9e-f884-4f51-b7cf-8924648dd9e0)
+
+      ![Screenshot 2024-02-23 043422](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/0f3ae18e-ce2e-4767-a140-0d16a303b5b2)
 
 
 These steps will confirm that the extension is operating correctly by taking and caching the screenshots. These images are not saved as files but are held in memory to for user data privacy & security and to save storage. I
