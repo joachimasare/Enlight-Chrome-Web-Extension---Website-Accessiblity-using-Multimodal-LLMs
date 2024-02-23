@@ -52,7 +52,7 @@ To use the Full Page Capture extension, simply click on its icon in the Chrome t
 
 ## Verifying Captured Images
 
-1. **Initiate the Capture Process**: Click on the extension's icon in the Chrome toolbar to begin capturing the webpage, it popup a start button that pressing 'Enter' or cliking on it starts the process by automatically scrolling through the webpage and taking snapshots to be processed.
+1. **Initiate the Capture Process**: Click on the extension's icon in the Chrome toolbar to begin capturing the webpage. This pops up a 'Start' button that can be accessed via the tab key or by clicking on it.    The extension now automatically scrolls through the webppage to take snapshots of the entire page to be processed by the multimodal LLM.  
 
 2. **Access the Extension's 'service worker' to view the image logs taken**:
    - Navigate to `chrome://extensions/` in your Chrome browser.
