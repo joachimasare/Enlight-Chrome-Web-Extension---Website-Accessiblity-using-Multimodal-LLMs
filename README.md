@@ -84,6 +84,16 @@ To use the Full Page Capture extension, simply click on its icon in the Chrome t
 
 These steps will confirm that the extension is operating correctly by taking and caching the screenshots. These images are not saved as files but are held in memory to for user data privacy & security and to save storage. I
 
+## User Privacy, Security, and Consent
+**Consent for Content Capture:** At the initial setup, users are explicitly asked for their consent to capture and analyze the content of the web pages they visit. 
+(Adherence to GDPR Article 6(1)(a), GDPR Article 7 - Conditions for Consent)
+
+**Selective Content Capture:** Utilizing ‘chrome.tabs.captureVisibleTab’, the extension captures only the content of the active tab, excluding any sensitive information (that may be in the menu bar, taskbar region, or other opened tabs). This method ensures that only relevant webpage content is processed, safeguarding user privacy and minimizing data exposure.
+(Adherence to GDPR Article 5 - Principles Relating to Processing of Personal Data)
+
+**Secure Data Handling:** All data captured and processed by the extension, from screenshots to AI-generated insights, are handled securely. Data transmission to any external servers for processing is encrypted, and strict data protection measures are in place to comply with privacy regulations and ensure the confidentiality and integrity of user data.
+(Adherence to GDPR Article 32 - Security of Processing)
+
 ## Proprietary
  This code is temporarily made public only for submission to and access by the MIT SLOAN PM Hackathon team.
 
