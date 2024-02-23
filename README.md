@@ -2,7 +2,7 @@
 
 # Full Page Capture Chrome Extension
 
-This Chrome extension is an AI-powered accessiblity tool allows blind and visually impaired business owners to access insights from online business web applications such as google analytics for their e-commerce websites. Once started, it automatically scrolls through the page, takes snapshots, and caches them and sends them as input to a multimodal LLM to extract the text and images to provide contextual understanding of the active webpage.
+This Chrome extension is an AI-powered accessiblity tool allows blind and visually impaired business owners to access insights from online business web applications such as google analytics for their e-commerce websites. Once started, it automatically scrolls through the page, takes snapshots, and caches them and sends them as input to a multimodal LLM to extract the text and images to provide a contextual understanding of the active webpage.
 
 v1 is an MVP of this that allows the user to install the extension in Google Chrome, and once started by selecting the extension, it automatically accesses the content of the active tab, and scans by automatically scrolling the page to take snapshots of the webpage and caches the images to be processed by the llm. 
 
@@ -49,6 +49,33 @@ To use the Full Page Capture extension, simply click on its icon in the Chrome t
 ![Screenshot 2024-02-22 134318](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/33b30bad-2ecb-4093-b59d-6ef74c1ef281)
 
 ![Screenshot 2024-02-22 134336](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/ca79d040-6605-4833-bb5c-bd141867a896)
+
+## Verifying Captured Images
+
+1. **Initiate the Capture Process**: Click on the extension's icon in the Chrome toolbar to begin capturing the webpage, it popup a start button that pressing 'Enter' or cliking on it starts the process by automatically scrolling through the webpage and taking snapshots to be processed.
+
+2. **Access the Extension's 'service worker' to view the image logs taken**:
+   - Navigate to `chrome://extensions/` in your Chrome browser.
+   - Locate the Full Page Capture extension in the list.
+     ![Screenshot 2024-02-23 043341](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/44ec76f0-a1aa-4d32-998e-76b03f7254fa)
+   - Click on the `background activity/logs` link for the Enlight extension, which might be labeled as `service worker` or similar. This will open the Developer Tools for the background service worker of the 
+     extension.
+     ![Screenshot 2024-02-23 043359](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/fed1f86c-64ff-4ffb-a70d-23cdee6969f2)
+
+3. **View Captured Images**:
+   - In the Developer Tools window, click on the "Console" tab.
+   - You should see logs for each screenshot taken, formatted as Data URLs beginning with `data:image/png;base64,` followed by the image data in base64 encoding.
+     ![Screenshot 2024-02-23 043412](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/e6a74d9e-f884-4f51-b7cf-8924648dd9e0)
+   - The number of logs will correspond to the number of screenshots taken as the extension scrolled through the page.
+
+4. **Check for Completion**:
+   - Once the extension has finished scrolling through the entire page and capturing screenshots, you should see a final log entry indicating that the process is complete, such as "Capture complete."
+     ![Screenshot 2024-02-23 044922](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/6af258c6-260f-4fa7-ba83-57a148cddaed)
+   - Copy and paste any of the image urls into the address bar to view the captured image. 
+   ![Screenshot 2024-02-23 043422](https://github.com/joachimasare/enlight_mvp_v1/assets/47057544/0f3ae18e-ce2e-4767-a140-0d16a303b5b2)
+
+
+These steps will confirm that the extension is operating correctly by taking and caching the screenshots. These images are not saved as files but are held in memory to for user data privacy & security and to save storage. I
 
 ## Proprietary
  This code is temporarily made public only for submission to and access by the MIT SLOAN PM Hackathon team.
